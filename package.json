@@ -4,38 +4,32 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node ./dist/index.js"
+    "start": "tsc && node ./dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "commander": "^13.1.0",
-    "download-git-repo": "^3.0.2",
-    "fs-extra": "^11.3.0",
-    "handlebars": "^4.7.8",
-    "inquirer": "^8.0.0",
-    "ora": "^5.4.1",
-    "shelljs": "^0.8.5",
-    "simple-git": "^3.27.0"
-  },
   "bin": {
     "my-cli": "./bin/main.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@eslint/js": "^9.21.0",
-    "eslint": "^9.21.0",
-    "eslint-config-prettier": "^10.0.2",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.3",
     "execa": "^5.1.1",
     "globals": "^16.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.5.3"
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
