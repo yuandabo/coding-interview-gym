@@ -7,7 +7,7 @@
     "start": "tsc && node ./dist/index.js",
     "build": "tsc",
     "dev": "nodemon --watch src --exec ts-node src/index.ts",
-    "prepare": "husky"
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +22,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "execa": "^5.1.1",
     "globals": "^16.0.0",
-    "husky": "^9.1.7",
+    "husky": "^8.0.3",
     "lint-staged": "^15.5.0",
     "nodemon": "^3.1.9",
     "prettier": "^3.5.3",
