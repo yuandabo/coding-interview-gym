@@ -8,15 +8,11 @@
     "start": "tsc && node ./dist/index.js",
     "build": "tsc",
     "dev": "nodemon --watch src --exec ts-node src/index.ts",
-    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "bin": {
-    "my-cli": "./bin/main.js"
-  },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
