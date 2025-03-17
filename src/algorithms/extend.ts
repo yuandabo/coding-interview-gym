@@ -22,5 +22,5 @@ parent.say() // father: 你打篮球的样子像kunkun
 
 var child = new Child('cxk', 'father')
 child.say() // father好，我是练习时长两年半的cxk
-
+//
 export {}
